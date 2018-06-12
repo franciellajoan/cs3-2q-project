@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: url(../img/all.jpg) no-repeat center fixed;
+    z-index: -1;
+    background-size: cover;
+}
+@keyframes bcchange{
+    0%{background-color: #9E0001;}
+    16.66%{background-color: #A1E9E5;}
+    33.32%{background-color: #E4B0FF;}
+    49.98%{background-color: #A7F39B;}
+    66.64%{background-color: #FFC996;}
+    83.3%{background-color: #FEA9AC;}
+    100%{background-color: #F6FF82;}
+}
+@keyframes borchange{
+    0%{border-top: 7.5px solid #9E0001;}
+    16.66%{border-top: 7.5px solid #A1E9E5;}
+    33.32%{border-top: 7.5px solid #E4B0FF;}
+    49.98%{border-top: 7.5px solid #A7F39B;}
+    66.64%{border-top: 7.5px solid #FFC996;}
+    83.3%{border-top: 7.5px solid #FEA9AC;}
+    100%{border-top: 7.5px solid #F6FF82;}
+}
+@font-face{
+    font-family: zebrazil;
+    src: url(../fonts/lemonmilk.otf);
+}
+@font-face{
+    font-family: foxncat;
+    src: url(../fonts/foxncat.ttf);
+}
+@font-face{
+    font-family: raleway;
+    src: url(../fonts/raleway-regular.ttf);
+}
+@font-face{
+    font-family: simplifica;
+    src: url(../fonts/simplifica.ttf);
+}
+@font-face{
+    font-family: belleza;
+    src: url(../fonts/belleza-regular.ttf);
+}
+@font-face{
+    font-family: gogoia;
+    src: url(../fonts/gogoia-deco.otf);
+}
+header{
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    width: 100%;
+    height: 125px;
+    background-color: rgb(0, 0, 0);
+}
+header h1{
+    position: relative;
+    text-align: center;
+    font-family: belleza;
+    color: white;
+    font-size: 80px;
+    letter-spacing: 25px;
+    text-shadow: 2px 2px 4px #000000;
+}
+header p{
+    position: relative;
+    text-align: center;
+    font-family: simplifica;
+    font-size: 25px;
+    letter-spacing: 10px;
+    word-spacing: 15px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+nav{
+    position: relative;
+    top: 125px;
+    width: 100%;
+    margin: 10px 0px;
+}
+nav ul{
+    width: 85%;
+    margin: auto;
+    display: -webkit-flex;
+}
+nav ul li{
+    position: relative;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+nav ul li a{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: transform 1s;
+}
+nav ul li .text{
+    opacity: 0;
+    background-color: #737479;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    padding: 2.5px;
+    border-radius: 6px;
+    font-family: gogoia;
+    font-size: 20px;
+    transform: none;
+    width: 75px;
+    top: 100%;
+    left: 50%; 
+    margin-left: -37.5px;
+    position: absolute;
+    z-index: 1;
+    transition: opacity .5s;
+}
+nav ul li .text::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #737479 transparent;
+}
+nav ul li #home{
+    background-color: #9E0001;
+}
+nav ul li #ad{
+    background-color: #A1E9E5;
+}
+nav ul li #astro{
+    background-color: #E4B0FF;
+}
+nav ul li #bio{
+    background-color: #A7F39B;
+}
+nav ul li #chem{
+    background-color: #FFC996;
+}
+nav ul li #p6{
+    background-color: #FEA9AC;
+}
+nav ul li #tech{
+    background-color: #F6FF82;
+}
+nav ul li a img{
+    height: 100px;
+    width: 100px;
+}
+nav ul li a .spec{
+    height: 80px;
+    width: 80px;
+    margin: 10px
+}
+nav ul li:hover .text{
+    opacity: 1;
+}
+nav ul li a:hover{
+    transform: rotate(720deg);
+}
+main{
+    position: relative;
+    top: 125px;
+    width: 85%;
+    margin: auto;
+}
+main #important{
+    width: 100%;
+    height: 295px;
+    display: -webkit-flex;
+}
+main #important .ft{
+    width: 23.85%;
+    height: 270px;
+    vertical-align: top;
+    margin: 10px 5px;
+    display: inline-block;
+}
+main #important .ftA{
+    width: 100%;
+    height: 270px;
+    vertical-align: top;
+    text-decoration: none;
+    display: inline-block;
+    transition: box-shadow .5s;
+}
+main #important .ftA h3{
+    position: relative;
+    top: 241px;
+    width: 100%;
+    height: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-indent: 7.5px;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 90%);
+    font-family: foxncat;
+    font-size: 25px;
+}
+main #important .ft .aftTop{
+    display: block;
+    width: 100%;
+    height: 130px;
+    margin-bottom: 10px;
+}
+main #important .ft .aftBot{
+    display: block;
+    width: 100%;
+    height: 130px;
+    margin-top: 10px;
+}
+main #important .ft .ftB{
+    display: block;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    text-decoration: none;
+    transition: box-shadow .5s;
+}
+main #important .ftB h3{
+    position: relative;
+    top: 101px;
+    width: 100%;
+    height: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-indent: 7.5px;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 90%);
+    font-family: foxncat;
+    font-size: 25px;
+}
+main #important .ftA:hover, main #important .ftB:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+main #important #one{
+    background: url(../img/arts&design.jpg) no-repeat center;
+    background-size: auto 100%;
+}
+main #important #two{
+    background: url(../img/astronomyArticle.png) no-repeat center;
+    background-size: 100%;
+}
+main #important #three{
+    background: url(../img/biologyArticle.jpg) no-repeat center;
+    background-size: 100%;
+}
+main #important #four{
+    background: url(../img/chemistryArticle.jpg) no-repeat;
+    background-size: auto 100%;
+}
+main #important #five{
+    background: url(../img/physicsArticle.jpg) no-repeat center;
+    background-size: 100%;
+}
+main #important #six{
+    background: url(../img/techArticle.jpg) no-repeat center;
+    background-size: 100%;
+}
+main #subs{
+    width: 100%;
+    height: auto;
+}
+main #subs #cont, main #pop{
+    width: 100%;
+    animation-name: borchange;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+main #subs h1, main h1{
+    display: inline-block;
+    color: white;
+    padding: 0px 7.5px;
+    padding-bottom: 7.5px;
+    width: auto;
+    height: auto;
+    font-family: belleza;
+    font-size: 30px;
+    animation-name: bcchange;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+main #subs video{
+    position: relative;
+    height: 85%;
+    width: 85%;
+    display: table;
+    margin: 10px auto;
+}
+footer{
+    width: 100%;
+    height: 75px;
+    background-color: rgba(0, 0, 0, .5);
+}
+footer #socialMedia{
+    position: relative;
+    top: 12.5px;
+    width: auto;
+    display: table; 
+    margin: auto;
+}
+footer #socialMedia li{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 0px 30px;
+    border-radius: 50%;
+}
+footer #socialMedia li a{
+    display: inline-block;
+    text-decoration: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+footer #socialMedia li a:hover{
+    
+}
+footer #socialMedia li a img{
+    height: 50px;
+    width: 50px;
+}
+@media only screen and (max-width: 840px){
+    nav ul li{
+        width: 75px;
+        height: 75px;
+    }
+    nav ul li a img{
+        width: 100%;
+        height: 100%;
+    }
+    nav ul li a .spec{
+        width: 75%;
+        height: 75%;
+    }
+    header p{
+        font-size: 20px;
+        letter-spacing: 5px;
+        word-spacing: 7.5px;
+    }
+}
+#article{
+    position: relative;
+    top: 125px;
+}
+#header{
+    margin: auto;
+    background-color: white;
+    width: 85%;
+    text-align: center;
+    padding: 5px 0;
+    font-family: zebrazil;
+    font-size: 32.5px;
+}
+#content{
+    position: relative;
+    width: 85%;
+    background-color: rgba(255, 255, 255, .75);
+    margin: auto;
+    column-count: 3;
+    text-indent: 20px;
+    position: relative;
+    top: 20px;
+    height: auto;
+    text-align: justify;
+    margin: auto;
+    padding: 0px 15px;
+    font-family: raleway;
+    font-size: 18px;
+    line-height: 150%;
+}
+#content img{
+    position: relative;
+    width: 90%;
+    height: auto;
+    padding-top: 15px;
+    display: table;
+}
+#content p{
+    text-indent: 20px;
+    position: relative;
+    top: 20px;
+    width: 90%;
+    height: auto;
+    text-align: justify;
+    margin: auto;
+    font-family: raleway;
+    font-size: 18px;
+    line-height: 150%;
+}
+#content #adPic2{
+    position: relative;
+    top: 20px;
+}
+#content #credits{
+    color: grey;
+}
